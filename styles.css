@@ -1,0 +1,103 @@
+/* Giao diện Glassmorphism và Hiệu ứng cao cấp */
+:root {
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(20, 24, 36, 0.6);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Kính mờ cơ bản */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.glass-header {
+    background: rgba(6, 8, 13, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Nút bấm CTA chính */
+.primary-btn {
+    background: linear-gradient(135deg, #FF5722 0%, #D84315 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(255, 87, 34, 0.4);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    text-align: center;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 87, 34, 0.6);
+}
+
+/* Nút bấm Kính mờ */
+.glass-btn {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 9999px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hiệu ứng Hover nâng lên */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #06080D;
+}
+::-webkit-scrollbar-thumb {
+    background: #2D3748;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4A5568;
+}

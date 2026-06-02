@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thử Thách 30 Ngày Giao Dịch AI | RIFT AI</title>
+    <meta name="description" content="Trải nghiệm công nghệ AI giao dịch tần suất cao của Quỹ lớn với số vốn chỉ $199. Hoàn tiền 100% nếu AI giao dịch âm sau 30 ngày.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS (CDN for quick prototyping) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5722', // Orange/Red accent
+                        secondary: '#4F46E5', // Indigo/Blue accent
+                        dark: '#0B0F19', // Deep space background
+                        darker: '#06080D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darker text-white antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+
+    <!-- Background Elements -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/20 blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-primary/10 blur-[120px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-header px-6 py-4 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-secondary to-primary flex items-center justify-center font-heading font-bold text-xl shadow-[0_0_15px_rgba(79,70,229,0.5)]">R</div>
+                <span class="font-heading font-bold text-xl tracking-wider">RIFT AI</span>
+            </div>
+            <div class="hidden md:flex gap-6 items-center">
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">Cách Hoạt Động</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors">Hỏi Đáp</a>
+                <a href="https://dautucongngheai.vercel.app/" target="_blank" class="text-gray-300 hover:text-white transition-colors">Về Chúng Tôi</a>
+            </div>
+            <a href="https://zalo.me/0935635788" target="_blank" class="glass-btn hidden md:flex items-center gap-2">
+                <i class="fa-solid fa-headset"></i> Hỗ trợ Zalo
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-32 pb-20 px-6 min-h-screen flex items-center">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-gray-300 mb-8 border border-white/10 animate-fade-in-up">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Hệ thống đang hoạt động ổn định trên Hyperliquid
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-heading font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+                THỬ THÁCH 30 NGÀY<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">ĐỂ AI GIAO DỊCH THAY BẠN</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-400 mb-10 font-light animate-fade-in-up" style="animation-delay: 0.2s;">
+                Vốn Chỉ $199. Lãi Bạn Rút, Lỗ RIFT Đền 100%.<br>
+                <span class="text-lg">Tiền nằm trong ví của bạn. Không uỷ thác, không giam vốn.</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up" style="animation-delay: 0.3s;">
+                <a href="https://app.riftprotocol.ai/r/riftvn" target="_blank" class="primary-btn text-lg py-4 px-8 w-full sm:w-auto relative group overflow-hidden">
+                    <span class="relative z-10 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-rocket"></i> Trải Nghiệm App Miễn Phí
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
+                
+                <a href="https://zalo.me/g/fnr6v8dwukwjv9eodkrs" target="_blank" class="glass-btn text-lg py-4 px-8 w-full sm:w-auto flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-blue-400"></i> Tham Gia Nhóm Zalo
+                </a>
+            </div>
+            
+            <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                <div class="text-sm text-gray-400 mb-2">Đã có <span class="text-white font-bold" id="registration-count">15</span>/50 người đăng ký</div>
+                <div class="w-full max-w-md mx-auto h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full transition-all duration-1000 ease-out" style="width: 30%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">Chương trình có thể đóng sớm khi đủ số lượng để đảm bảo quỹ rủi ro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Point Section -->
+    <section class="relative z-10 py-20 px-6 bg-dark/50 border-y border-white/5">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden border border-red-500/20">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 blur-[50px]"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Thực trạng đau lòng hiện nay:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0 text-red-500"><i class="fa-solid fa-xmark text-sm"></i></div>
+                            <p class="text-gray-300"><strong class="text-white">Góp vốn, Ủy thác:</strong> Đưa tiền cho người khác trade hộ, ngày đẹp trời sàn sập, leader bốc hơi.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0 text-red-500"><i class="fa-solid fa-xmark text-sm"></i></div>
+                            <p class="text-gray-300"><strong class="text-white">Copy Trade:</strong> Chủ tài khoản đánh cháy, bạn cũng cháy theo. Không thể kiểm soát rủi ro.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0 text-red-500"><i class="fa-solid fa-xmark text-sm"></i></div>
+                            <p class="text-gray-300"><strong class="text-white">Bị giam vốn:</strong> Muốn rút tiền nhưng hệ thống báo lỗi, bắt nạp thêm tiền để được rút...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold leading-tight mb-6">
+                    BẠN ĐÃ MỆT MỎI VỚI NHỮNG LỜI HỨA "CAM KẾT LÃI KHỦNG"?
+                </h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Chúng tôi biết bạn đang nghĩ gì: <span class="italic text-gray-300">"Lại một dự án lừa đảo góp vốn nữa chăng?"</span>
+                </p>
+                <div class="inline-block px-6 py-3 rounded-lg bg-secondary/20 border border-secondary/30 text-secondary-light font-medium">
+                    Đó là lý do RIFT AI ra đời. Chúng tôi KHÔNG LÀM NHỮNG TRÒ ĐÓ.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="relative z-10 py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold mb-4">TẠI RIFT, BẠN LÀ NGƯỜI DUY NHẤT<br><span class="text-primary">KIỂM SOÁT TIỀN CỦA MÌNH</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Thiết kế công nghệ minh bạch loại bỏ hoàn toàn khả năng lừa đảo.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover-lift border border-white/10 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center mb-6 shadow-lg border border-gray-700 group-hover:border-secondary/50 transition-colors">
+                        <i class="fa-solid fa-wallet text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Your Keys, Your Crypto</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Vốn $199 của bạn sẽ nằm trên ví Web3 (ví sàn phi tập trung Hyperliquid) do CHÍNH BẠN nắm giữ Private Key.</p>
+                    <div class="text-xs bg-dark p-3 rounded text-gray-300 border border-white/5">
+                        <i class="fa-solid fa-info-circle text-secondary mr-1"></i> <strong>Sự thật:</strong> API của RIFT CHỈ CÓ QUYỀN đặt lệnh. KHÔNG CÓ QUYỀN RÚT TIỀN.
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover-lift border border-white/10 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center mb-6 shadow-lg border border-gray-700 group-hover:border-primary/50 transition-colors">
+                        <i class="fa-solid fa-bolt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Thanh Khoản 24/7</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Thích thì nạp, không thích thì ngắt API và rút tiền về tài khoản ngân hàng trong vòng 1 phút.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Không ai giam vốn</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Không có phí ẩn</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Rút bất chấp ngày đêm</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover-lift border border-white/10 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center mb-6 shadow-lg border border-gray-700 group-hover:border-purple-500/50 transition-colors">
+                        <i class="fa-solid fa-microchip text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Công Nghệ HFT Thực Chiến</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">RIFT sử dụng thuật toán Giao Dịch Tần Suất Cao (HFT) ăn chênh lệch giá siêu nhỏ. Không phải phép màu, là Toán học.</p>
+                    <a href="https://dautucongngheai.vercel.app/" target="_blank" class="text-xs text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        Tìm hiểu thêm về công nghệ <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="how-it-works" class="relative z-10 py-24 px-6 bg-gradient-to-b from-darker to-dark">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">TẠI SAO LẠI LÀ $199 VÀ "BAO LỖ"?</h2>
+            <p class="text-xl text-gray-400 mb-12">Cách nhanh nhất để bạn tin tưởng công nghệ của chúng tôi là hãy để bạn tận mắt nhìn thấy hệ thống kiếm tiền mỗi ngày, với rủi ro bằng 0.</p>
+            
+            <div class="glass-card p-2 rounded-3xl border-2 border-primary/30 relative shadow-[0_0_50px_rgba(255,87,34,0.15)] mb-12">
+                <div class="absolute -top-4 -right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide transform rotate-12 shadow-lg">Cam Kết 100%</div>
+                <div class="bg-darker rounded-2xl p-8 md:p-12">
+                    <div class="grid md:grid-cols-3 gap-8 text-left">
+                        <div>
+                            <div class="text-primary text-4xl mb-4"><i class="fa-solid fa-sack-dollar"></i></div>
+                            <h4 class="font-bold text-lg mb-2">Vốn Yêu Cầu Nhỏ</h4>
+                            <p class="text-gray-400 text-sm">Chỉ đúng $199 để mọi người đều có thể tiếp cận công nghệ của quỹ lớn.</p>
+                        </div>
+                        <div>
+                            <div class="text-green-500 text-4xl mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <h4 class="font-bold text-lg mb-2">Lợi Nhuận Bạn Giữ</h4>
+                            <p class="text-gray-400 text-sm">Hệ thống tạo ra bao nhiêu lợi nhuận trong 30 ngày, bạn được rút 100%.</p>
+                        </div>
+                        <div>
+                            <div class="text-secondary text-4xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4 class="font-bold text-lg mb-2">Lỗ RIFT Đền</h4>
+                            <p class="text-gray-400 text-sm">Nếu sau 30 ngày tài khoản $199 của bạn bị âm, chúng tôi bù lại phần lõm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inline-flex flex-col items-center">
+                <a href="https://zalo.me/g/fnr6v8dwukwjv9eodkrs" target="_blank" class="primary-btn text-lg py-4 px-12 mb-4">
+                    Tham Gia Thử Thách Ngay
+                </a>
+                <p class="text-gray-500 text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-gray-400"></i> Quỹ bảo chứng luôn duy trì > $10,000 để đảm bảo thanh toán.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onboarding Section -->
+    <section class="relative z-10 py-24 px-6 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">"NHƯNG TÔI MÙ CÔNG NGHỆ THÌ CÓ LÀM ĐƯỢC KHÔNG?"</h2>
+                    <p class="text-xl text-primary font-medium mb-8">Đừng lo! Chuyên viên của RIFT sẽ hỗ trợ bạn 1-1 từ A-Z.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4 relative">
+                            <div class="w-px h-full bg-gray-800 absolute left-6 top-8"></div>
+                            <div class="w-12 h-12 rounded-full bg-dark border border-gray-700 flex items-center justify-center font-bold text-lg text-white z-10 shrink-0 shadow-lg">1</div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-2">Đăng Ký Khóa Vị Trí</h4>
+                                <p class="text-gray-400 text-sm">Tham gia nhóm Zalo hỗ trợ để giữ 1 trong 50 suất của tháng này.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 relative">
+                            <div class="w-px h-full bg-gray-800 absolute left-6 top-8"></div>
+                            <div class="w-12 h-12 rounded-full bg-secondary/20 border border-secondary flex items-center justify-center font-bold text-lg text-secondary z-10 shrink-0 shadow-[0_0_15px_rgba(79,70,229,0.3)]">2</div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-2">Dịch Vụ White-Glove (Hỗ trợ tận răng)</h4>
+                                <p class="text-gray-400 text-sm">Chuyên viên liên hệ Ultraview/Zoom (15p) giúp bạn tạo ví Hyperliquid, nạp $199 và cài API bảo mật.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary flex items-center justify-center font-bold text-lg text-primary z-10 shrink-0 shadow-[0_0_15px_rgba(255,87,34,0.3)]">3</div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-2">Thảnh Thơi Tận Hưởng</h4>
+                                <p class="text-gray-400 text-sm">Nhận báo cáo lợi nhuận PnL mỗi 20:00 hàng ngày. Tuyệt đối không can thiệp tay vào lệnh của máy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-primary/20 blur-[80px] rounded-full"></div>
+                    <div class="glass-card p-6 rounded-2xl relative border border-white/10 text-center">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hỗ trợ 1-1" class="rounded-xl w-full h-auto object-cover mb-6 border border-white/5 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
+                        <h4 class="font-bold text-xl mb-2">Hotline Hỗ Trợ 24/7</h4>
+                        <p class="text-3xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-4">0935 635 788</p>
+                        <a href="https://zalo.me/0935635788" target="_blank" class="glass-btn w-full block py-3 text-center">
+                            Nhắn Zalo Chuyên Viên Ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="relative z-10 py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold text-center mb-12">HỎI ĐÁP MINH BẠCH</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-bold text-lg">Nếu RIFT giỏi thế sao không tự đánh mà đi gọi vốn $199?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-gray-400 text-sm leading-relaxed hidden">
+                        Mô hình kinh doanh của RIFT là cung cấp "Phần mềm dạng Dịch vụ" (SaaS). Thử thách $199 này hoàn toàn là bài test thực tế (Marketing cost). Khi bạn thấy nó hiệu quả sau 30 ngày, chúng tôi kỳ vọng bạn sẽ tin tưởng và mua Giấy phép (License) dài hạn để cắm số vốn lớn hơn ($2,000 - $10,000). Đó là cách chúng tôi kiếm tiền bền vững cùng bạn.
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-bold text-lg">Lỡ công ty RIFT sập thì sao?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-gray-400 text-sm leading-relaxed hidden">
+                        Nếu RIFT dừng hoạt động, Bot sẽ ngừng giao dịch. Nhưng $199 CỦA BẠN VẪN NẰM TRONG VÍ CỦA BẠN. Bạn chỉ cần lên sàn tự rút tiền về ngân hàng. Thiết kế kiến trúc của chúng tôi đảm bảo bạn không bị phụ thuộc tài chính vào một bên thứ ba.
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-bold text-lg">Tôi phải làm gì trong 30 ngày đó?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-gray-400 text-sm leading-relaxed hidden">
+                        Bạn không cần làm gì cả. Luật duy nhất là: <strong>Không được dùng tay tự can thiệp đóng/mở lệnh của AI</strong>. Nếu bạn tự ý thao tác đánh tay, quyền lợi "Hoàn Tiền 100% Bao Lỗ" sẽ bị hủy ngay lập tức vì hệ thống không thể quản trị rủi ro khi có sự can thiệp của con người.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="relative z-10 py-20 px-6 bg-gradient-to-t from-darker to-dark text-center border-t border-white/5">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">CƠ HỘI ĐỂ AI LÀM VIỆC THAY BẠN ĐÃ ĐẾN</h2>
+            <p class="text-gray-400 mb-10">Bạn không có rủi ro với quỹ bảo chứng của chúng tôi. Chỉ dành cho 50 người hành động nhanh nhất.</p>
+            
+            <a href="https://zalo.me/g/fnr6v8dwukwjv9eodkrs" target="_blank" class="primary-btn text-xl py-5 px-12 inline-flex items-center gap-3">
+                <i class="fa-brands fa-zalo"></i> THAM GIA THỬ THÁCH ZALO NGAY
+            </a>
+            
+            <div class="mt-16 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-600">
+                <div>&copy; 2026 RIFT Protocol. All rights reserved.</div>
+                <div class="flex gap-4">
+                    <a href="https://dautucongngheai.vercel.app/" target="_blank" class="hover:text-gray-300">Trang Chủ</a>
+                    <a href="#" class="hover:text-gray-300">Điều Khoản</a>
+                    <a href="#" class="hover:text-gray-300">Chính Sách</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
